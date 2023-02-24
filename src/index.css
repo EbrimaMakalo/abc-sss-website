@@ -8,8 +8,9 @@
     li {
         @apply p-2 lg:p-5 xl:p-7
     }
+/*     
     button {
         @apply text-white bg-indigo-500 border border-indigo-500 rounded-md
         hover:bg-transparent hover:text-indigo-500 
-    }
+    } */
 }

@@ -1,57 +1,76 @@
-import React, {useState} from "react";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { RxDotFilled } from "react-icons/rx";
+import React from 'react';
+import principal from '../assets/default-principal-image.jpg';
+import { FaAngleDoubleRight, FaFacebook, FaLinkedin, FaUsers } from "react-icons/fa";
+import { HiOutlineSpeakerphone } from "react-icons/hi";
+import { GoCalendar } from "react-icons/go";
+import { BsYoutube, BsTwitter } from "react-icons/bs";
+import { FiInstagram } from "react-icons/fi";
 
 const Home = () => {
-
-    const slides = [
-        {
-            url: 'https://foroyaa.net/wp-content/uploads/2019/09/The-premises-of-ABC-School-sponsored-by-Norwegians-who-are-providing-free-education-to-all-students.-Photo-by-Mutarr.jpg'
-        },
-        {
-            url: 'https://pbs.twimg.com/media/E3ioFptXEAM3RKN.jpg:large'
-        },
-        {
-            url: 'https://foroyaa.net/wp-content/uploads/2019/09/From-L-Mr.-Touray-ABC-Administrator-AB-Vice-Principal-Mr.-Camara-and-AB%E2%80%99s-Mom-Mrs.-Jeng-Photo-by-Matarr.jpg'
-        }
-    ];
-
-    const[currentIndex, setCurrentIndex] = useState(0)
-
-    const prevSlide = () => {
-        const isFirstSlide = currentIndex === 0;
-        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-        setCurrentIndex(newIndex);
-    }
-
-    const nextSlide = () => {
-        const isLastSlide = currentIndex === slides.length - 1;
-        const newIndex = isLastSlide ? 0 : currentIndex + 1;
-        setCurrentIndex(newIndex);
-    }
-
-    const goToSlide = (slideIndex) => {
-        setCurrentIndex(slideIndex);
-    }
-
-    return <div className="lg:px-10 xl:px-20 2xl:px-40 pt-10 h-screen w-full m-auto relative group">
-        <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className="w-full h-[350px] md:h-[400px] lg:h-[675px] bg-cover duration-500"></div>
-        {/* left arrow */}
-        <div className="hidden group-hover:block absolute top-[30%] lg:top-[50%] -translate-x-0 translate-y-[-50%] left-2 xl:left-5 2xl:left-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-            <BsChevronCompactLeft onClick={prevSlide} size={35}/>
-        </div>
-        {/* right arrow */}
-        <div className="hidden group-hover:block absolute top-[30%] lg:top-[50%] -translate-x-0 translate-y-[-50%] right-2 xl:right-5 2xl:right-20 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-            <BsChevronCompactRight onClick={nextSlide} size={35}/>
-        </div>
-        <div className="flex top-4 justify-center py-2">
-            {slides.map((slide, slideIndex) => (
-                <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className="text-xl md:text-2xl cursor-pointer">
-                    <RxDotFilled />
+  return (
+    <div className='px-5 lg:px-10 xl:px-28 2xl:px-52 w-screen z-10'>
+        <div className='w-full justify-between'>
+            <h1 className='text-3xl mb-10 font-bold text-indigo-500'>Home Page</h1>
+            <div className='grid md:grid-cols-2 gap-4'>
+                <div>
+                  <h1 className='text-2xl font-bold mb-5'>Welcome To ABC Senior Secondary School</h1>
+                  <p className='pr-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ducimus porro ut facere tempore, dolorum inventore repellat odio ullam tenetur placeat at nihil dicta harum neque. Laboriosam non officia eaque molestias, ratione quidem cumque nihil dolore, aspernatur expedita maiores veniam voluptatum provident magni, inventore magnam quam! Eius ea, minima rem, laudantium maxime hic illum odio, eum exercitationem rerum asperiores culpa illo. Cupiditate quia eaque, officia dignissimos veritatis incidunt dicta dolor expedita, voluptatibus quod, sapiente doloremque!</p>
+                  <p className='pr-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ab laboriosam quae praesentium eveniet quis necessitatibus libero assumenda, beatae, rerum id perspiciatis! Velit repudiandae, nobis hic exercitationem alias dicta error asperiores, laboriosam aliquid, harum architecto minima? Ducimus, ipsam corporis. Eum in iure eaque blanditiis sit expedita modi deserunt, similique autem?</p>
                 </div>
-            ))}
+                <div className='mr-4'>
+                   <h1 className='text-2xl mb-5 md:text-right font-bold'>Principal - Mr. XXXXXXXXX</h1>
+                  <img className='h-80 md:float-right rounded-full' src={principal} alt="/" />
+                </div>
+            </div>
+            
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20'>
+              <div className='mb-10'>
+                <h1 className='bg-indigo-500 text-3xl text-white p-2 mb-5 flex'><a href=""><span className='hover:underline'>Latest News</span></a><HiOutlineSpeakerphone className=' ml-60 md:ml-36 lg:ml-24 xl:ml-32 2xl:ml-[150px] mt-1' /></h1>
+                <div className='space-y-2 pr-2'>
+                  <p className='border-b-2 border-black/20 hover:border-indigo-500 hover:text-gray-500'><a href="">ABC Competes in InterSchool Drama Competitions</a></p>
+                  <p className='border-b-2 border-black/20 hover:border-indigo-500 hover:text-gray-500'><a href="">ABC Competes in InterSchool Football Tournament</a></p>
+                </div>
+                <button className='mt-5 bg-gray-500 hover:bg-indigo-500 text-white p-1 flex'><a href="">All News</a><FaAngleDoubleRight  className='ml-2 mt-1'/></button>
+              </div>
+              <div className='mb-10'>
+                <h1 className='bg-gray-500 text-3xl text-white p-2 mb-5 flex'><a href=""><span className='hover:underline'>Upcoming Events</span></a><GoCalendar className='ml-44 md:ml-16 lg:ml-4 xl:ml-12 2xl:ml-20 mt-1' /></h1>
+                <div className='flex mb-2'>
+                  <div className='mr-10'>
+                    <h1 className='text-6xl text-indigo-500 font-bold'>12</h1>
+                    <p className='text-xl ml-4 mt-1 text-indigo-500'>SEP</p>
+                  </div>
+                  <p className='mt-8 text-xl'>School Resumes</p>
+                </div>
+                <div className='flex mb-2'>
+                  <div className='mr-10'>
+                    <h1 className='text-6xl text-indigo-500 font-bold'>23</h1>
+                    <p className='text-xl ml-4 mt-1 text-indigo-500'>SEP</p>
+                  </div>
+                  <p className='mt-8 text-xl'>PTA Meeting</p>
+                </div>
+                <div className='flex'>
+                  <div className='mr-10'>
+                    <h1 className='text-6xl text-indigo-500 font-bold ml-4'>1</h1>
+                    <p className='text-xl ml-4 mt-1 text-indigo-500'>OCT</p>
+                  </div>
+                  <p className='mt-8 text-xl'>Cultural Day</p>
+                </div>
+                <button className='mt-5 bg-gray-500 hover:bg-indigo-500 text-white p-1 flex'><a href="">All Events</a><FaAngleDoubleRight  className='ml-2 mt-1'/></button>
+              </div>
+              <div>
+                <h1 className='bg-indigo-500 text-3xl text-white p-2 mb-5 flex'>Social Platforms<FaUsers className='mt-1 ml-48 md:ml-24 lg:ml-10 xl:ml-20 2xl:ml-24'/></h1>
+                <div className='text-xl'>
+                  <a href=""><p className='flex pb-6 hover:text-indigo-700'>ABC Facebook Page<FaFacebook className='ml-5 mt-1'/></p></a>
+                  <a href=""><p className='flex pb-6 hover:text-[#ff0000]'>ABC Youtube Page<BsYoutube className='ml-8 mt-1'/></p></a>
+                  <a href=""><p className='flex pb-6 hover:text-[#fb3958]'>ABC Instagram Page<FiInstagram className='ml-4 mt-1'/></p></a>
+                  <a href=""><p className='flex pb-6 hover:text-[#1DA1F2]'>ABC Twitter Page<BsTwitter className='ml-11 mt-1'/></p></a>
+                  <a href=""><p className='flex pb-6 hover:text-[#0077B5]'>ABC LinkedIn Page<FaLinkedin className='ml-8 mt-1 hover:text-[#0077B5]'/></p></a>
+                </div>
+              </div>
+            </div>
         </div>
     </div>
+  )
 }
 
-export default Home;
+export default Home
