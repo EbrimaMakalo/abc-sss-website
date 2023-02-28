@@ -1,5 +1,5 @@
 import React from 'react';
-import principal from '../assets/default-principal-image.jpg';
+import principal from '../assets/images/default-principal-image.jpg';
 import { FaAngleDoubleRight, FaFacebook, FaLinkedin, FaUsers } from "react-icons/fa";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { GoCalendar } from "react-icons/go";
@@ -8,17 +8,17 @@ import { FiInstagram } from "react-icons/fi";
 
 const Home = () => {
   return (
-    <div className='px-5 lg:px-10 xl:px-28 2xl:px-52 w-screen z-10'>
+    <div name='home' className='px-5 lg:px-10 xl:px-28 2xl:px-52 w-screen z-10'>
         <div className='w-full justify-between'>
-            <h1 className='text-3xl mb-10 font-bold text-indigo-500'>Home Page</h1>
-            <div className='grid md:grid-cols-2 gap-4'>
+            {/* <h1 className='text-3xl mb-10 font-bold text-indigo-500'>Home Page</h1> */}
+            <div className='grid md:grid-cols-2 gap-4 mt-10 md:mt-14 xl:mt-20'>
                 <div>
-                  <h1 className='text-2xl font-bold mb-5'>Welcome To ABC Senior Secondary School</h1>
+                  <h1 className='text-2xl font-bold text-indigo-500 mb-5'>Welcome To ABC Senior Secondary School</h1>
                   <p className='pr-3 text-lg text-justify mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ducimus porro ut facere tempore, dolorum inventore repellat odio ullam tenetur placeat at nihil dicta harum neque. Laboriosam non officia eaque molestias, ratione quidem cumque nihil dolore, aspernatur expedita maiores veniam voluptatum provident magni, inventore magnam quam! Eius ea, minima rem, laudantium maxime hic illum odio, eum exercitationem rerum asperiores culpa illo. Cupiditate quia eaque, officia dignissimos veritatis incidunt dicta dolor expedita, voluptatibus quod, sapiente doloremque!</p>
                   <p className='pr-3 text-lg text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ab laboriosam quae praesentium eveniet quis necessitatibus libero assumenda, beatae, rerum id perspiciatis! Velit repudiandae, nobis hic exercitationem alias dicta error asperiores, laboriosam aliquid, harum architecto minima? Ducimus, ipsam corporis. Eum in iure eaque blanditiis sit expedita modi deserunt, similique autem?</p>
                 </div>
-                <div className='mr-4'>
-                   <h1 className='text-2xl mb-10 md:text-right font-bold'>Principal - Mr. XXXXXXXXX</h1>
+                <div className='pr-4 mt-10 md:mt-0'>
+                   <h1 className='text-2xl mb-10 md:text-right font-bold text-indigo-500'>Principal - Mr. XXXXXXXXX</h1>
                   <img className='h-80 lg:h-96 md:float-right rounded-full' src={principal} alt="/" />
                 </div>
             </div>

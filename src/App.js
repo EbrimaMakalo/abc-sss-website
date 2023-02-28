@@ -7,6 +7,7 @@ import About from "./components/About";
 import Admission from "./components/Admission";
 import Sports from "./components/Sports";
 import ImageGallery from "./components/ImageGallery";
+import VideoGallery from "./components/VideoGallery";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Admission />
       <Sports />
       <ImageGallery />
+      <VideoGallery />
       <Footer />
       <BackToTop />
     </>

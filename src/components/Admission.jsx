@@ -2,10 +2,10 @@ import React from 'react'
 
 const Admission = () => {
   return (
-    <div className='w-full mt-20 bg-gradient-to-r from-indigo-300 via-gray-300 to-indigo-200'>
+    <div name='admission' className='w-full mt-20 bg-gradient-to-r from-indigo-300 via-gray-300 to-indigo-200'>
         <div className='px-5 lg:px-10 xl:px-28 2xl:px-52'>
             <div className='py-5 space-y-4'>
-                <h1 className='text-2xl lg:text-3xl font-bold'>How to Apply to ABC</h1>
+                <h1 className='text-2xl lg:text-3xl font-bold text-indigo-500'>How to Apply to ABC</h1>
                 <div>
                     <h1 className='text-xl lg:text-xl font-bold'>Step 1:</h1>
                     <p className='text-lg text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus corrupti cupiditate laudantium earum est ducimus culpa rem.</p>
