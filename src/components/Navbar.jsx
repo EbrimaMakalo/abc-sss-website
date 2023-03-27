@@ -12,7 +12,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
     return (
-        <div className="w-screen h-[250px] xl:h-[170px] z-10 bg-gray-200">
+        <div className="w-screen h-[250px] xl:h-[170px] z-10 bg-gray-200 relative">
             <div className="xl:flex h-[100px] xl:h-[40px] text-white bg-indigo-500 py-2 sm:py-5 px-2 sm:px-5 lg:px-10 xl:px-28 2xl:px-52 justify-between items-center w-full">
                 <div className="flex pb-4 xl:pb-0">
                     <p className="flex pr-3"><FaPhoneAlt className="mr-2 mt-1 text-xs sm:text-lg"/>+220 2754911</p>
@@ -31,12 +31,12 @@ const Navbar = () => {
                     <p>Senior Secondary School</p>
                 </div>
                 <div className="flex">
-                    <ul className="hidden md:flex 2xl:text-xl pt-1">
-                        <li className="hover:text-indigo-500 cursor-pointer"><Link to="home" smooth={true} offset={-50} duration={500} >Home</Link></li>
-                        <li className="hover:text-indigo-500 cursor-pointer"><Link to="about" className="flex" smooth={true} offset={-50} duration={500} ><FaUsers className="mt-1 mr-1"/>About ABC<FaAngleDown className="text-sm mt-2 ml-2"/></Link></li>
-                        <li className="hover:text-indigo-500 cursor-pointer"><Link to="admission" className="flex" smooth={true} offset={-50} duration={500} ><FaRegEdit className="text-lg mt-1 mr-1"/>Admission<FaAngleDown className="text-sm mt-2 ml-2"/></Link></li>
-                        <li className="hover:text-indigo-500 cursor-pointer"><Link to="sports" className="flex" smooth={true} offset={-50} duration={500} ><FaFutbol className="mt-1 mr-1"/>Sports</Link></li>
-                        <li className="hover:text-indigo-500 cursor-pointer"><Link to="videos" smooth={true} offset={-50} duration={500} >Videos</Link></li>
+                    <ul className="hidden md:flex lg:text-xl pt-1">
+                        <li className="hover:text-indigo-500 hover:font-bold hover:border-b-4 hover:border-b-indigo-500 cursor-pointer"><Link to="home" smooth={true} offset={-50} duration={500} >Home</Link></li>
+                        <li className="hover:text-indigo-500 hover:font-bold hover:border-b-4 hover:border-b-indigo-500 cursor-pointer"><Link to="about" className="flex" smooth={true} offset={-50} duration={500} ><FaUsers className="mt-1 mr-1"/>About</Link></li>
+                        <li className="hover:text-indigo-500 hover:font-bold hover:border-b-4 hover:border-b-indigo-500 cursor-pointer"><Link to="admission" className="flex" smooth={true} offset={-50} duration={500} ><FaRegEdit className="text-lg mt-1 mr-1"/>Admission<FaAngleDown className="text-sm mt-2 ml-2"/></Link></li>
+                        <li className="hover:text-indigo-500 hover:font-bold hover:border-b-4 hover:border-b-indigo-500 cursor-pointer"><Link to="sports" className="flex" smooth={true} offset={-50} duration={500} ><FaFutbol className="mt-1 mr-1"/>Sports</Link></li>
+                        <li className="hover:text-indigo-500 hover:font-bold hover:border-b-4 hover:border-b-indigo-500 cursor-pointer"><Link to="videos" smooth={true} offset={-50} duration={500} >Videos</Link></li>
                     </ul>
                     <form action="" className="relative flex items-center">
                         <AiOutlineSearch className="w-5 h-5 ml-2 absolute pointer-events-none"/>
@@ -57,12 +57,12 @@ const Navbar = () => {
                     
                 </div>
             </div>
-            <ul className={!nav ? "hidden" : "absolute bg-gray-200 w-screen h-[300px] px-8"}>
-                <Link to="home" smooth={true} offset={-50} duration={500} ><li className="border-b-2 border-gray-300 w-full hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500">Home</li></Link>
-                <Link to="about" smooth={true} offset={5} duration={500} ><li className="flex border-b-2 border-gray-300 w-full hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500"><FaUsers className="mt-1 mr-1"/>About ABC<FaAngleDown className="text-sm mt-2 ml-2"/></li></Link>
-                <Link to="admission" smooth={true} offset={5} duration={500} ><li className="flex border-b-2 border-gray-300 w-full hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500"><FaRegEdit className="text-lg mt-1 mr-1"/>Admission<FaAngleDown className="text-sm mt-2 ml-2"/></li></Link>
-                <Link to="sports" smooth={true} offset={-5} duration={500} ><li className="flex border-b-2 border-gray-300 w-full hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500"><FaFutbol className="mt-1 mr-1"/>Sports</li></Link>
-                <Link to="videos" smooth={true} offset={-50} duration={500} ><li className="flex border-b-2 border-gray-300 w-full hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500">Videos</li></Link>
+            <ul className={!nav ? "hidden" : "absolute bg-gray-200 w-screen h-[320px] px-5"}>
+                <Link to="home" smooth={true} offset={-50} duration={500} ><li className="border-b-2 py-4 hover:font-bold cursor-pointer border-gray-300 w-full hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500">Home</li></Link>
+                <Link to="about" smooth={true} offset={25} duration={500} ><li className="flex border-b-2 py-4 hover:font-bold cursor-pointer border-gray-300 w-full hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500"><FaUsers className="mt-1 mr-1"/>About ABC<FaAngleDown className="text-sm mt-2 ml-2 float-right"/></li></Link>
+                <Link to="admission" smooth={true} offset={5} duration={500} ><li className="flex border-b-2 py-4 hover:font-bold cursor-pointer border-gray-300 w-full hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500"><FaRegEdit className="text-lg mt-1 mr-1"/>Admission<FaAngleDown className="text-sm mt-2 ml-2"/></li></Link>
+                <Link to="sports" smooth={true} offset={-5} duration={500} ><li className="flex border-b-2 py-4 hover:font-bold cursor-pointer border-gray-300 w-full hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500"><FaFutbol className="mt-1 mr-1"/>Sports</li></Link>
+                <Link to="videos" smooth={true} offset={-50} duration={500} ><li className="flex border-b-2 py-4 hover:font-bold cursor-pointer border-gray-300 w-full hover:border-b-2 hover:border-b-indigo-500 hover:text-indigo-500">Videos</li></Link>
                 
                 {/* <div className="flex flex-col my-3">
                     <button className="bg-transparent text-indigo-500 px-6 py-2 mb-3">Sign In</button>

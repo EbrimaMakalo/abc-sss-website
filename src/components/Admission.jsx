@@ -29,14 +29,14 @@ const Admission = () => {
             </div>
             <div className='pb-10 grid md:grid-cols-2 mt-5'>
                 <div className='text-center md:border-r-2 mb-10 md:mb-0'>
-                    <h1 className='text-2xl font-bold mb-3'>Apply</h1>
+                    <h1 className='text-3xl font-bold mb-3'>Apply</h1>
                     <p className='text-xl mb-3'>Click on the button below to Apply</p>
-                    <button className='bg-indigo-500 p-2 rounded hover:bg-gray-500 text-white'>Apply</button>
+                    <button className='bg-indigo-500 p-2 rounded px-20 hover:bg-gray-500 text-white'>Apply</button>
                 </div>
                 <div className=' text-center'>
-                    <h1 className='text-2xl font-bold mb-3'>Login</h1>
+                    <h1 className='text-3xl font-bold mb-3'>Login</h1>
                     <p className='text-xl mb-3'>Click on the button below to Login</p>
-                    <button className='bg-indigo-500 p-2 rounded hover:bg-gray-500 text-white'>Login</button>
+                    <button className='bg-indigo-500 p-2 rounded px-20 hover:bg-gray-500 text-white'>Login</button>
                 </div>
             </div>
         </div>

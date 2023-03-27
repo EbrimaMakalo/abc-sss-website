@@ -35,7 +35,7 @@ const FrontPage = () => {
     }
 
     return <div className="xl:px-28 2xl:px-52 h-full w-full m-auto group">
-        <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className="w-full h-[280px] sm:h-[450px] md:h-[450px] lg:h-[460px] xl:h-[550px] bg-cover duration-500"></div>
+        <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className="w-full h-[280px] sm:h-[350px] md:h-[400px] lg:h-[400px] xl:h-[520px] bg-cover duration-500"></div>
         {/* left arrow */}
         <div className="hidden group-hover:block absolute top-[60%] sm:top-[65%] md:top-[65%] xl:top-[60%] -translate-x-0 translate-y-[-50%] text-2xl rounded-r-full p-1 lg:p-2 bg-black/50 hover:bg-indigo-400 text-white cursor-pointer">
             <BsChevronCompactLeft onClick={prevSlide} size={35}/>

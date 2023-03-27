@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='xl:h-[660px] px-5 lg:px-10 xl:px-28 2xl:px-52 py-5 bg-gray-300 w-full justify-between'>
                 <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-1'>
                     <div className='mb-10'>
-                        <h1 className='text-2xl font-bold mb-5'>School Address</h1>
+                        <h1 className='text-3xl font-bold mb-5'>School Address</h1>
                         <iframe width="333" height="286" id="gmap_canvas" src="https://maps.google.com/maps?q=ABC%20Senior%20Secondary%20School%20New%20Jeshwang&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         <div className='space-y-1 mt-4'>
                             <p>ABC Senior Seconday School</p>
@@ -27,7 +27,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='space-y-4 mb-10'>
-                        <h1 className='text-2xl font-bold'>Various Clubs</h1>
+                        <h1 className='text-3xl font-bold'>Various Clubs</h1>
                         <p className='hover:text-white'><a href="">Science and Maths Clud</a></p>
                         <p className='hover:text-white'><a href="">Peer Health Club</a></p>
                         <p className='hover:text-white'><a href="">ICT Club</a></p>
@@ -39,7 +39,7 @@ const Footer = () => {
                         <p className='hover:text-white'><a href="">Athletics</a></p>
                     </div>
                     <div>
-                        <h1 className='text-2xl font-bold'>Social Platforms</h1>
+                        <h1 className='text-3xl font-bold'>Social Platforms</h1>
                         <div className='flex my-5 pb-2 border-b-2 xl:border-b-0 xl:border-t-2 xl:pt-2 border-indigo-500 text-3xl'>
                             <a href=""><FaFacebook className='mr-10 hover:text-indigo-700'/></a>
                             <a href=""><BsYoutube className='mr-10 hover:text-[#ff0000]'/></a>

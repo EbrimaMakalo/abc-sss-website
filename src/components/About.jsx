@@ -58,17 +58,17 @@ const About = () => {
         </div>
         <div className='px-5 lg:px-10 xl:px-28 2xl:px-52 grid lg:grid-cols-2 gap-5 mt-20'>
             <div className='space-y-3 rounded-2xl shadow-xl bg-gray-100 p-4 mb-5 lg:mb-0'>
-                <h1 className='text-2xl font-bold text-indigo-500'>Mission Statement</h1>
+                <h1 className='text-3xl font-bold text-indigo-500'>Mission Statement</h1>
                 <p className='text-lg text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reprehenderit atque ea. Magnam, tempora? Architecto deleniti quam eum blanditiis velit praesentium id. Labore, voluptas perferendis! Natus delectus dignissimos similique quos tempore, voluptatibus accusamus placeat voluptate accusantium assumenda quas quia adipisci. Possimus, dolorem. Reiciendis temporibus, eum fugit repellat iusto omnis inventore ut quasi repellendus? Suscipit voluptas odio officia! Quisquam reiciendis quibusdam quis ipsum doloremque distinctio veritatis aut quia possimus laudantium similique nulla tempora, ducimus sequi alias. Minima reprehenderit sed fuga, similique est ullam nesciunt reiciendis incidunt molestiae provident consequuntur ea quae ratione, optio eveniet id cumque amet esse recusandae fugiat sapiente!</p>
             </div>
             <div className='space-y-3 rounded-2xl bg-gray-100 shadow-xl p-4'>
-                <h1 className='text-2xl font-bold text-indigo-500'>Vission Statement</h1>
+                <h1 className='text-3xl font-bold text-indigo-500'>Vission Statement</h1>
                 <p className='text-lg text-justify'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi mollitia fuga molestiae vel dignissimos nobis rerum, earum ab impedit inventore officia ipsa maxime natus consequuntur asperiores. Eligendi odio totam perferendis repudiandae hic culpa voluptate odit ducimus corporis doloribus ut voluptatum obcaecati assumenda modi harum voluptas eos deleniti, nemo magnam voluptates soluta. Perspiciatis culpa nesciunt assumenda laborum beatae fugit a debitis in voluptate vel, quia vero? Harum sit commodi laudantium minima earum enim dolor voluptates aut. Porro deserunt aspernatur eos laboriosam, modi iure minus temporibus quis. Facilis expedita, quae quis voluptates rem asperiores iste, aspernatur voluptatum quasi blanditiis dolor minima consectetur.</p>
             </div>
         </div>
         <div className='px-5 lg:px-10 xl:px-28 2xl:px-52 mt-10'>
             <div className='rounded-2xl shadow-xl bg-gray-100'>
-                <h1 className='text-2xl font-bold pt-5 pl-5 text-indigo-500'>School Rules</h1>
+                <h1 className='text-3xl font-bold pt-5 pl-5 text-indigo-500'>School Rules</h1>
                 <ul className='list-decimal pl-10 text-lg text-justify'>
                     <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim in quidem quos eius quaerat facilis provident amet quis incidunt tenetur?</li>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam beatae culpa rerum repellendus, vitae amet.</li>

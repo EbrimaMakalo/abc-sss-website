@@ -13,19 +13,19 @@ const Home = () => {
             {/* <h1 className='text-3xl mb-10 font-bold text-indigo-500'>Home Page</h1> */}
             <div className='grid md:grid-cols-2 gap-4 mt-10 md:mt-14 xl:mt-20'>
                 <div>
-                  <h1 className='text-2xl font-bold text-indigo-500 mb-5'>Welcome To ABC Senior Secondary School</h1>
+                  <h1 className='text-4xl font-bold text-indigo-500 mb-5'>Welcome To ABC SSS</h1>
                   <p className='pr-3 text-lg text-justify mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ducimus porro ut facere tempore, dolorum inventore repellat odio ullam tenetur placeat at nihil dicta harum neque. Laboriosam non officia eaque molestias, ratione quidem cumque nihil dolore, aspernatur expedita maiores veniam voluptatum provident magni, inventore magnam quam! Eius ea, minima rem, laudantium maxime hic illum odio, eum exercitationem rerum asperiores culpa illo. Cupiditate quia eaque, officia dignissimos veritatis incidunt dicta dolor expedita, voluptatibus quod, sapiente doloremque!</p>
                   <p className='pr-3 text-lg text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ab laboriosam quae praesentium eveniet quis necessitatibus libero assumenda, beatae, rerum id perspiciatis! Velit repudiandae, nobis hic exercitationem alias dicta error asperiores, laboriosam aliquid, harum architecto minima? Ducimus, ipsam corporis. Eum in iure eaque blanditiis sit expedita modi deserunt, similique autem?</p>
                 </div>
                 <div className='pr-4 mt-10 md:mt-0'>
-                   <h1 className='text-2xl mb-10 md:text-right font-bold text-indigo-500'>Principal - Mr. XXXXXXXXX</h1>
+                   <h1 className='text-4xl mb-10 md:text-right font-bold text-indigo-500'>Principal - Mr. XXXXXXXXX</h1>
                   <img className='h-80 lg:h-96 md:float-right rounded-full' src={principal} alt="/" />
                 </div>
             </div>
             
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20'>
               <div className='mb-10'>
-                <h1 className='bg-indigo-500 text-3xl text-white p-2 mb-5 flex'><a href=""><span className='hover:underline'>Latest News</span></a><HiOutlineSpeakerphone className=' ml-60 md:ml-36 lg:ml-24 xl:ml-32 2xl:ml-[150px] mt-1' /></h1>
+                <h1 className='bg-indigo-500 text-3xl text-white p-2 mb-5'><a href=""><span className='hover:underline'>Latest News</span></a><HiOutlineSpeakerphone className='float-right mt-1' /></h1>
                 <div className='space-y-2 pr-2'>
                   <p className='border-b-2 border-black/20 hover:border-indigo-500 hover:text-gray-500'><a href="">ABC Competes in InterSchool Drama Competitions</a></p>
                   <p className='border-b-2 border-black/20 hover:border-indigo-500 hover:text-gray-500'><a href="">ABC Competes in InterSchool Football Tournament</a></p>
@@ -33,7 +33,7 @@ const Home = () => {
                 <button className='mt-5 bg-gray-500 hover:bg-indigo-500 text-white p-1 flex'><a href="">All News</a><FaAngleDoubleRight  className='ml-2 mt-1'/></button>
               </div>
               <div className='mb-10'>
-                <h1 className='bg-gray-500 text-3xl text-white p-2 mb-5 flex'><a href=""><span className='hover:underline'>Upcoming Events</span></a><GoCalendar className='ml-44 md:ml-16 lg:ml-4 xl:ml-12 2xl:ml-20 mt-1' /></h1>
+                <h1 className='bg-gray-500 text-3xl text-white p-2 mb-5'><a href=""><span className='hover:underline'>Upcoming Events</span></a><GoCalendar className='float-right mt-1' /></h1>
                 <div className='flex mb-2'>
                   <div className='mr-10'>
                     <h1 className='text-6xl text-indigo-500 font-bold'>12</h1>
@@ -58,7 +58,7 @@ const Home = () => {
                 <button className='mt-5 bg-gray-500 hover:bg-indigo-500 text-white p-1 flex'><a href="">All Events</a><FaAngleDoubleRight  className='ml-2 mt-1'/></button>
               </div>
               <div>
-                <h1 className='bg-indigo-500 text-3xl text-white p-2 mb-5 flex'>Social Platforms<FaUsers className='mt-1 ml-48 md:ml-24 lg:ml-10 xl:ml-20 2xl:ml-24'/></h1>
+                <h1 className='bg-indigo-500 text-3xl text-white p-2 mb-5'>Social Platforms<FaUsers className='mt-1 float-right'/></h1>
                 <div className='text-xl'>
                   <a href=""><p className='flex pb-6 hover:text-indigo-700'>ABC Facebook Page<FaFacebook className='ml-5 mt-1'/></p></a>
                   <a href=""><p className='flex pb-6 hover:text-[#ff0000]'>ABC Youtube Page<BsYoutube className='ml-8 mt-1'/></p></a>
