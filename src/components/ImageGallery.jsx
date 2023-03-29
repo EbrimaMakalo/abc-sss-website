@@ -71,7 +71,7 @@ const ImageGallery = () => {
         <>
 
         <div className='mt-20 lg:mt-40 px-2 lg:px-5 xl:px-28 2xl:px-52'>
-            <h1 className='font-bold text-2xl md:text-3xl text-indigo-500'>ABC Sports Picture Gallery</h1>
+            <h1 className='font-bold text-3xl lg:text-4xl text-indigo-500'>ABC Sports Picture Gallery</h1>
         </div>
         <div className={model? 'model open' : 'model'}>
             <img src={tempimgSrc} />
