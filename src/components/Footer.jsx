@@ -50,7 +50,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='h-[80px] text-center text-white text-xl pt-3 px-5 lg:px-10 xl:px-28 2xl:px-52'>
+            <div className='h-[100px] sm:h-[80px] text-center text-white text-xl pt-3 px-5 lg:px-10 xl:px-28 2xl:px-52'>
                 <p>&copy; copyright {year}. All Rights Reserved</p>
                 <p>Powered By MakxTech</p>
             </div>

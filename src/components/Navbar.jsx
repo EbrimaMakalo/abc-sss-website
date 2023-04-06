@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <div className="w-screen h-[250px] xl:h-[170px] z-10 bg-gray-200 relative">
             <div className="xl:flex h-[100px] xl:h-[40px] text-white bg-indigo-500 py-2 sm:py-5 px-2 sm:px-5 lg:px-10 xl:px-28 2xl:px-52 justify-between items-center w-full">
-                <div className="flex pb-4 xl:pb-0">
+                <div className="flex sm:pb-4 xl:pb-0">
                     <p className="flex pr-3"><FaPhoneAlt className="mr-2 mt-1 text-xs sm:text-lg"/>+220 2754911</p>
                     <p className="flex border-l-2 pl-4 text-white"><FaRegEnvelope className="mr-2 mt-1 text-lg"/><span className=" hover:text-gray-200">ibrahimmaks99@gmail.com</span></p>
                 </div>
@@ -40,10 +40,10 @@ const Navbar = () => {
                     <form action="" className="relative flex items-center">
                         <AiOutlineSearch className="w-12 h-6 border-r border-transparent absolute inset-y-0 my-auto pointer-events-none"/>
                         <input
-                            type="search" 
-                            placeholder="Search..." 
+                            type="search"  
                             name="search"
-                            className="placeholder-black py-4 pl-10 mr-3 bg-transparent border border-white focus:border-indigo-500 relative z-10 h-12 w-12 rounded-full cursor-pointer outline-none focus:w-full focus:cursor-text focus:pr-2 focus:pl-12" 
+                            placeholder="Search..."
+                            className="mr-3 bg-transparent placeholder-transparent focus:placeholder-black focus:bg-black/10 relative z-10 h-12 w-12 rounded-full focus:rounded-none cursor-pointer outline-none focus:w-full focus:cursor-text focus:pr-2 focus:pl-12" 
                         />
                     </form>
                 </div>
