@@ -8,16 +8,16 @@ const Sports = () => {
             <h1 className='text-3xl lg:text-4xl font-bold text-indigo-500'>ABC SPORTS</h1>
             <p className='mt-10 text-center text-2xl border-b-2 pb-5 font-bold'>ABC Values and Promotes Sports</p>
         </div>
-        <div className='mt-20 grid md:grid-cols-2 px-5 lg:px-10 xl:px-20 2xl:px-20 gap-20 lg:gap-40'>
+        <div className='mt-20 grid md:grid-cols-2 px-5 lg:mx-10 xl:mx-20 2xl:mx-20 gap-20 lg:gap-40'>
             <div className='text-center'>
-                <img src={principal} alt="/" className='rounded-full' />
-                <div className='mt-5'>
+                <img src={principal} alt="/" className='h-80 lg:h-96 sm:mx-36 md:m-0 rounded-full' />
+                <div className='mt-5 mx-10'>
                     <h1 className='text-2xl lg:text-3xl font-bold'>Mr. XXXXXXXX</h1>
                     <p className='text-xl mt-5'>Head of Sports Department</p>
                 </div>
             </div>
             <div className='text-center'>
-                <img src={principal} alt="/" className='rounded-full ' />
+                <img src={principal} alt="/" className='h-80 lg:h-96 sm:mx-36 md:m-0 rounded-full ' />
                 <div className='mt-5'>
                     <h className='text-2xl lg:text-3xl font-bold'>Mr. XXXXXXXXXXX</h>
                     <p className='text-xl mt-5'>Head Coach</p>

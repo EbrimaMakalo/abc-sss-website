@@ -43,7 +43,7 @@ const Navbar = () => {
                             type="search"  
                             name="search"
                             placeholder="Search..."
-                            className="mr-3 bg-transparent placeholder-transparent focus:placeholder-black focus:bg-black/10 relative z-10 h-12 w-12 rounded-full focus:rounded-none cursor-pointer outline-none focus:w-full focus:cursor-text focus:pr-2 focus:pl-12" 
+                            className="mr-3 bg-black/10 placeholder-transparent focus:placeholder-black focus:bg-black/10 relative z-10 h-12 w-12 rounded-full focus:rounded-none cursor-pointer outline-none focus:w-full focus:cursor-text focus:pr-2 focus:pl-12" 
                         />
                     </form>
                 </div>
